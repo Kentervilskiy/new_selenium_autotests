@@ -14,3 +14,7 @@ class LoginPageLocators():
     REGISTRATION_SUBMIT = (By.CSS_SELECTOR, "#register_form > .btn")
 class ProductPageLocators():
     ADD_TO_BASKET = (By.CSS_SELECTOR, ".btn.btn-lg.btn-primary.btn-add-to-basket")
+    PRODUCT_NAME = (By.CSS_SELECTOR, ".col-sm-6.product_main h1")
+    SUCCESS_MESSAGE = (By.CSS_SELECTOR, ".alertinner strong")
+    PRICE_IN_CATALOG = (By.CSS_SELECTOR, ".col-sm-6.product_main p")
+    PRICE_IN_SUCCESS_MESSAGE = (By.CSS_SELECTOR, ".alert.alert-safe.alert-noicon.alert-info strong")
