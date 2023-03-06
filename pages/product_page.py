@@ -19,3 +19,8 @@ class ProductPage(BasePage):
         text_price_in_success_massage = price_in_success_massage.text
         assert text_product_name == text_success_message
         assert text_price_in_catalog == text_price_in_success_massage
+    def should_not_be_success_message(self):
+        assert self.is_not_element_present(*ProductPageLocators.SUCCESS_MESSAGE), \
+            "Success message is presented, but should not be"
+    def should_disappeared_success_message(self):
+        assert self.is_disappeared(*ProductPageLocators.SUCCESS_MESSAGE)
