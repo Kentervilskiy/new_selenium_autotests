@@ -24,3 +24,4 @@ class ProductPageLocators():
     SUCCESS_MESSAGE = (By.CSS_SELECTOR, ".alertinner strong")
     PRICE_IN_CATALOG = (By.CSS_SELECTOR, ".col-sm-6.product_main p")
     PRICE_IN_SUCCESS_MESSAGE = (By.CSS_SELECTOR, ".alert.alert-safe.alert-noicon.alert-info strong")
+    
